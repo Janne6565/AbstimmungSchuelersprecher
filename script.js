@@ -1,6 +1,9 @@
 function changed(number){
     var obj = document.getElementById('verify' + number);
     if (obj.value !== ""){
+        if (obj.value.length > 1){
+            obj.value = obj.value.charAt(1);
+        }
         try {
             var newObj = document.getElementById('verify' + (number + 1))
             newObj.select()
@@ -26,6 +29,13 @@ function changed(number){
                     }
                 }
             };
+        }
+    } else{
+        try {
+            var newObj = document.getElementById('verify' + (number - 1))
+            newObj.select()
+        }catch{
+
         }
     }
 }

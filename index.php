@@ -17,11 +17,11 @@
         <h1>Bitte geben Sie Ihren 5-stelligen Code ein</h1>
         <img src="Assets/Logo.png" alt="Logo Andreas Gymnasium" class="logo">
         <div class="code">
-            <input type="number" oninput="changed(1)" id="verify1" maxlength="1" class="inputNumberVerify">
-            <input type="number" oninput="changed(2)" id="verify2" maxlength="1" class="inputNumberVerify">
-            <input type="number" oninput="changed(3)" id="verify3" maxlength="1" class="inputNumberVerify">
-            <input type="number" oninput="changed(4)" id="verify4" maxlength="1" class="inputNumberVerify">
-            <input type="number" oninput="changed(5)" id="verify5" maxlength="1" class="inputNumberVerify">
+            <input type="number" oninput="changed(1)" id="verify1" maximum="9" minimum="0" class="inputNumberVerify">
+            <input type="number" oninput="changed(2)" id="verify2" maximum="9" minimum="0" class="inputNumberVerify">
+            <input type="number" oninput="changed(3)" id="verify3" maximum="9" minimum="0" class="inputNumberVerify">
+            <input type="number" oninput="changed(4)" id="verify4" maximum="9" minimum="0" class="inputNumberVerify">
+            <input type="number" oninput="changed(5)" id="verify5" maximum="9" minimum="0" class="inputNumberVerify">
             <img src="" class="verify" alt="" id="verify">
         </div>
     </section>
